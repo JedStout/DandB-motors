@@ -38,7 +38,7 @@ function emit(path, html, { sitemap = true } = {}) {
 const brandTitle = (t) => `${t} | D&B Motors, Shingle Springs CA`;
 const count = (fn) => forSale.filter(fn).length;
 const makes = [...new Set(forSale.map((v) => v.make))].sort();
-const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
+const plural = (n, word) => `${n} ${word}${n === 1 ? '' : /(s|x|z|ch|sh)$/.test(word) ? 'es' : 's'}`;
 
 const dealer = {
   '@context': 'https://schema.org',
