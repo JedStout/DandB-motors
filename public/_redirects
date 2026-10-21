@@ -1,0 +1,13 @@
+# Netlify / Cloudflare Pages redirects. Old DealerCenter URLs → new pages (301 keeps SEO value).
+# Vehicle pages (/inventory/<make>/<model>/<stock>/), /inventory/, /apply-online/,
+# /value-your-vehicle/, /contact-us/ and /privacy-policy/ keep their old URLs.
+/home/                 /                    301
+/about/                /about-us/           301
+/financing/            /apply-online/       301
+/finance/              /apply-online/       301
+/trade-in/             /value-your-vehicle/ 301
+/sell-your-car/        /value-your-vehicle/ 301
+/contact/              /contact-us/         301
+/wp-admin/*            /                    301
+/wp-login.php          /                    301
+/feed/*                /                    301
